@@ -1,6 +1,8 @@
 import React from 'react'
 import {
-  View
+  View,
+  Text,
+  TouchableOpacity
 } from 'react-native'
 
 
@@ -17,10 +19,28 @@ class Button extends React.Component {
 
   render() {
 
-    return(
-      <View>
+    const {
+      onPress,
+      styleContainer,
+      styleTitle,
+      title,
+      icon
+    } = this.props
 
-      </View>
+    return(
+      <TouchableOpacity onPress={ onPress }>
+        <View style={styleContainer}>
+          {
+            icon != null ?
+              icon
+            :
+              null
+          }
+          <View style={styles.textContainer}>
+            <Text style={styleTitle}>{ title }</Text>
+          </View>
+        </View>
+      </TouchableOpacity>
     )
 
   }

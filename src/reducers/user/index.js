@@ -1,5 +1,5 @@
 
-import { USER } from '../configs/types'
+import { USER } from '../../configs/types'
 
 const initState = {
   is_authed: false,

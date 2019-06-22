@@ -1,5 +1,5 @@
 
-import { COMMON } from '../configs/types'
+import { COMMON } from '../../configs/types'
 
 const initState = {
   loading: false,

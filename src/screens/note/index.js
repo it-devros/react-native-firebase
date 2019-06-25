@@ -32,7 +32,7 @@ const mapStateToProps = (state) => {
 }
 
 
-class Temp extends React.Component {
+class Note extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
@@ -44,7 +44,7 @@ class Temp extends React.Component {
 
     return(
       <View>
-
+        <Text>This is the note</Text>
       </View>
     )
 
@@ -52,4 +52,4 @@ class Temp extends React.Component {
 
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(Temp)
+export default connect(mapStateToProps, mapDispatchToProps)(Note)

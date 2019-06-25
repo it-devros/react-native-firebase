@@ -10,9 +10,12 @@ import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
 
 import {
-  Button,
-  Link
+  BlockIconButton
 } from '../../components'
+
+import {
+  HomeFooter
+} from '../../shares'
 
 import {
   commonActions,
@@ -45,6 +48,11 @@ class Home extends React.Component {
     this.state = {
     }
 
+    this.navigateTo = this.navigateTo.bind(this)
+  }
+
+  navigateTo(screen) {
+    this.props.navigation.navigate(screen)
   }
 
   render() {
@@ -67,10 +75,10 @@ class Home extends React.Component {
           <View style={styles.buttonSection}>
             <View style={styles.startSection}>
               <Text style={styles.startTitle}>Give Care, Get Care</Text>
-              <Button
+              <BlockIconButton
                 title={'Login with Facebook'}
-                styleContainer={[styles.buttonContainer, {backgroundColor: '#3B5998'}]}
-                styleTitle={[styles.buttonTitle, {color: '#ffffff'}]}
+                background={'#3B5998'}
+                color={'#ffffff'}
                 icon={
                   <Image
                     style={styles.buttonIcon}
@@ -78,10 +86,10 @@ class Home extends React.Component {
                   />
                 }
               />
-              <Button
+              <BlockIconButton
                 title={'Login with Google'}
-                styleContainer={styles.buttonContainer}
-                styleTitle={styles.buttonTitle}
+                background={'#ffffff'}
+                color={'#000000'}
                 icon={
                   <Image
                     style={styles.buttonIcon}
@@ -90,35 +98,20 @@ class Home extends React.Component {
                 }
               />
               <Text style={styles.newUserLabel}>New user?</Text>
-              <Button
+              <BlockIconButton
                 title={'Sign up with Email'}
-                styleContainer={styles.buttonContainer}
-                styleTitle={styles.buttonTitle}
+                background={'#ffffff'}
+                color={'#000000'}
                 icon={
                   <Image
                     style={styles.buttonIcon}
                     source={require('../../assets/icons/opened-email-envelope.png')}
                   />
                 }
+                onPress={() => this.navigateTo('Register')}
               />
             </View>
-            <View style={styles.footerNavSection}>
-              <View style={styles.footerNavItem}>
-                <Link
-                  title={'Terms & Conditions'}
-                  style={styles.link}
-                />
-              </View>
-              <View style={styles.footerNavItem}>
-                <Text style={{ color: '#ffffff' }}>|</Text>
-              </View>
-              <View style={styles.footerNavItem}>
-                <Link
-                  title={'Privacy Policy'}
-                  style={styles.link}
-                /> 
-              </View> 
-            </View>
+            <HomeFooter />
           </View>
         </View>
       </ImageBackground>

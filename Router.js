@@ -11,12 +11,14 @@ import {
 
 
 import {
-  Home
+  Home,
+  Register
 } from './src/screens'
 
 
 const AuthStack = {
-  Home: { screen: Home }
+  Home: { screen: Home },
+  Register: { screen: Register }
 }
 
 

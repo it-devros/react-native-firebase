@@ -41,14 +41,6 @@ const styles = StyleSheet.create({
     color: '#540C69',
     textAlign: 'center'
   },
-  footerNavSection: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'center'
-  },
-  footerNavItem: {
-    margin: normalize(5)
-  },
   startSection: {
     marginBottom: normalize(30)
   },
@@ -57,32 +49,6 @@ const styles = StyleSheet.create({
     fontSize: normalize(30),
     color: '#ffffff',
     textAlign: 'left'
-  },
-  link: {
-    color: '#ffffff'
-  },
-  buttonContainer: {
-    marginBottom: normalize(10),
-    width: width - normalize(60),
-    padding: normalize(5),
-    backgroundColor: '#ffffff',
-    borderRadius: normalize(5),
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'space-between',
-
-    shadowColor: "#000",
-    shadowOffset: {
-      width: 0,
-      height: 3,
-    },
-    shadowOpacity: 0.5,
-    shadowRadius: 5,
-    elevation: 15,
-  },
-  buttonTitle: {
-    color: '#000000',
-    textAlign: 'center'
   },
   newUserLabel: {
     color: '#ffffff',

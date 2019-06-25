@@ -36,7 +36,7 @@ const styles = StyleSheet.create({
   inputSection: {
     margin: normalize(30),
     alignItems: 'center',
-    justifyContent: 'flex-end'
+    justifyContent: 'flex-end',
   },
   formSection: {
     marginBottom: normalize(15)

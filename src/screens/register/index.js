@@ -57,8 +57,8 @@ class Register extends React.Component {
     this.navigateTo = this.navigateTo.bind(this)
   }
 
-  navigateTo(screen) {
-
+  navigateTo() {
+    this.props.navigation.navigate('Menu')
   }
 
   render() {
@@ -102,7 +102,7 @@ class Register extends React.Component {
                     title={'NEXT >'}
                     background={'#ffffff'}
                     color={'#000000'}
-                    onPress={() => this.navigateTo('Register')}
+                    onPress={() => this.navigateTo()}
                   />
                 </View>
               </View>

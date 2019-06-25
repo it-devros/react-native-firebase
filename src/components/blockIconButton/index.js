@@ -9,7 +9,7 @@ import {
 import styles from './style'
 
 
-class Button extends React.Component {
+class BlockIconButton extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
@@ -22,6 +22,7 @@ class Button extends React.Component {
     const {
       onPress,
       title,
+      icon,
       background,
       color
     } = this.props
@@ -29,7 +30,10 @@ class Button extends React.Component {
     return(
       <TouchableOpacity onPress={ onPress }>
         <View style={[styles.container, { backgroundColor: background }]}>
-          <Text style={[styles.title, { color: color }]}>{ title }</Text>
+          { icon }
+          <View style={styles.textContainer}>
+            <Text style={[styles.title, { color: color }]}>{ title }</Text>
+          </View>
         </View>
       </TouchableOpacity>
     )
@@ -38,4 +42,4 @@ class Button extends React.Component {
 
 }
 
-export default Button
+export default BlockIconButton

@@ -47,7 +47,7 @@ const styles = StyleSheet.create({
     width: '100%',
     flexDirection: 'row',
     alignItems: 'flex-end',
-    justifyContent: 'center'
+    justifyContent: 'space-between'
   },
   attachImage: {
     margin: normalize(5),

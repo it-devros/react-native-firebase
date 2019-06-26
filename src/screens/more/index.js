@@ -11,6 +11,9 @@ import {
 import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
 
+import { 
+  Post
+} from '../../shares'
 
 import {
   commonActions,
@@ -132,58 +135,7 @@ class More extends React.Component {
               <Text style={styles.latestPostTitle}>Latest Posts</Text>
             </View>
             <View style={styles.postItems}>
-              <View style={styles.postItem}>
-                <Image
-                  style={styles.postItemAvatar}
-                  source={require('../../assets/avatars/avatar9.jpg')}
-                />
-                <View style={styles.content}>
-                  <View style={styles.postInfoSection}>
-                    <Text style={styles.postUserName}>Susan C., Raleigh, NC.</Text>
-                    <Text>Sun. at 3.09 PM</Text>
-                  </View>
-                  <View style={styles.messageSection}>
-                    <Text>Some angel came and sat with mom for 4 hours so hubby and I went dancing last night. It's been ages! Thanks to all those Super Carers!</Text>
-                  </View>
-                  <View style={styles.attachmentSection}>
-                    <View style={styles.tagSection}>
-                      <Image
-                        style={styles.tagImage}
-                        source={require('../../assets/icons/heart.png')}
-                      />
-                      <Text style={styles.tagText}>85</Text>
-                    </View>
-                    <Image
-                      style={styles.attachImage}
-                      source={require('../../assets/images/cover.jpg')}
-                    />
-                    <View style={styles.tagSection}>
-                      <Image
-                        style={styles.tagImage}
-                        source={require('../../assets/icons/comment.png')}
-                      />
-                      <Text style={styles.tagText}>55</Text>
-                    </View>
-                  </View>
-                  <View style={styles.commentsSection}>
-                    <View style={styles.tagSection}>
-                      <Image
-                        style={styles.tagImage}
-                        source={require('../../assets/icons/like.png')}
-                      />
-                      <Text style={styles.tagText}>Like</Text>
-                    </View>
-                    <Text>{' '}</Text>
-                    <View style={styles.tagSection}>
-                      <Image
-                        style={styles.tagImage}
-                        source={require('../../assets/icons/comment.png')}
-                      />
-                      <Text style={styles.tagText}>Comment</Text>
-                    </View>
-                  </View>
-                </View>
-              </View>
+              <Post />
             </View>
           </View>
         </ScrollView>

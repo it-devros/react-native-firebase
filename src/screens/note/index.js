@@ -1,12 +1,20 @@
 import React from 'react'
 import {
   View,
-  Text
+  Text,
+  TextInput,
+  ScrollView,
+  Image,
+  TouchableOpacity
 } from 'react-native'
 
 import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
 
+
+import { 
+  Post
+} from '../../shares'
 
 import {
   commonActions,
@@ -36,6 +44,8 @@ class Note extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
+      content: null,
+      searchKey: null
     }
 
   }
@@ -43,8 +53,55 @@ class Note extends React.Component {
   render() {
 
     return(
-      <View>
-        <Text>This is the note</Text>
+      <View style={styles.container}>
+        <View style={styles.inputFormSection}>
+          <Image
+            style={styles.postItemAvatar}
+            source={require('../../assets/avatars/avatar9.jpg')}
+          />
+          <View style={styles.inputSector}>
+            <View style={styles.inputSection}>
+              <TextInput
+                style={styles.inputElement}
+                placeholder={'Share something with your group or ask a question...'}
+                value={this.state.content}
+                multiline={true}
+              />
+            </View>
+            <View style={styles.attachBtnSection}>
+              <TouchableOpacity>
+                <Image
+                  style={styles.attachBtnImage}
+                  source={require('../../assets/icons/add.png')}
+                />
+              </TouchableOpacity>
+            </View>
+          </View>
+        </View>
+        <View style={styles.searchFormSection}>
+          <TextInput
+            style={styles.searchElement}
+            placeholder={'Latest Posts'}
+            value={this.state.searchKey}
+          />
+          <Image
+            style={styles.searchIcon}
+            source={require('../../assets/icons/search-outline.png')}
+          />
+        </View>
+        <ScrollView>
+          <View style={styles.postItems}>
+            <View style={styles.item}>
+              <Post />
+            </View>
+            <View style={styles.item}>
+              <Post />
+            </View>
+            <View style={styles.item}>
+              <Post />
+            </View>
+          </View>
+        </ScrollView>
       </View>
     )
 

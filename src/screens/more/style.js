@@ -62,7 +62,7 @@ const styles = StyleSheet.create({
     width: normalize(120),
     height: normalize(120),
     borderRadius: normalize(60),
-    borderColor: '#707070',
+    borderColor: 'rgba(112,112,112, 0.5)',
     borderWidth: normalize(2)
   },
   absoluteAdd: {
@@ -77,7 +77,7 @@ const styles = StyleSheet.create({
   infoSection: {
     marginTop: normalize(70),
     borderBottomWidth: normalize(2),
-    borderColor: '#707070'
+    borderColor: 'rgba(112,112,112, 0.5)'
   },
   nameAddress: {
     fontSize: normalize(18),
@@ -98,7 +98,7 @@ const styles = StyleSheet.create({
     alignItems: 'flex-start',
     justifyContent: 'space-between',
     borderBottomWidth: normalize(5),
-    borderColor: '#707070'
+    borderColor: 'rgba(112,112,112, 0.5)'
   },
   buttonItem: {
     flex: 1,
@@ -110,7 +110,7 @@ const styles = StyleSheet.create({
     height: normalize(60),
     borderRadius: normalize(30),
     borderWidth: normalize(3),
-    borderColor: '#707070',
+    borderColor: 'rgba(112,112,112, 1)',
     alignItems: 'center',
     justifyContent: 'center',
     marginBottom: normalize(5)
@@ -148,7 +148,7 @@ const styles = StyleSheet.create({
     marginRight: normalize(5),
     borderRadius: normalize(30),
     borderWidth: normalize(2),
-    borderColor: '#707070'
+    borderColor: 'rgba(112,112,112, 0.5)'
   },
   content: {
     flex: 1,
@@ -166,7 +166,7 @@ const styles = StyleSheet.create({
   messageSection: {
     borderWidth: normalize(2),
     borderRadius: normalize(5),
-    borderColor: '#707070',
+    borderColor: 'rgba(112,112,112, 0.5)',
     padding: normalize(5)
   },
   attachmentSection: {

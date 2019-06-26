@@ -21,7 +21,7 @@ const styles = StyleSheet.create({
     padding: normalize(5),
     paddingLeft: normalize(15),
     borderBottomWidth: 2,
-    borderColor: '#ddd'
+    borderColor: 'rgba(112,112,112, 0.5)'
   },
   avatarImage: {
     width: normalize(70),

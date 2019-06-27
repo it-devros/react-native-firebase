@@ -7,6 +7,7 @@ import Leadership from './leadership'
 import Care from './care'
 import RequestCare from './requestcare'
 import OfferCare from './offercare'
+import CareRequests from './carerequests'
 import Notification from './notification'
 import More from './more'
 import FindCareGivers from './findcaregivers'
@@ -21,6 +22,7 @@ export {
   Care,
   RequestCare,
   OfferCare,
+  CareRequests,
   Notification,
   More,
   FindCareGivers

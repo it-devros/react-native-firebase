@@ -8,6 +8,7 @@ import Care from './care'
 import RequestCare from './requestcare'
 import OfferCare from './offercare'
 import CareRequests from './carerequests'
+import CareRequestView from './carerequestview'
 import Notification from './notification'
 import More from './more'
 import FindCareGivers from './findcaregivers'
@@ -23,6 +24,7 @@ export {
   RequestCare,
   OfferCare,
   CareRequests,
+  CareRequestView,
   Notification,
   More,
   FindCareGivers

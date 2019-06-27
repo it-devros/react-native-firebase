@@ -21,7 +21,9 @@ class CareRequest extends React.Component {
   render() {
 
     const {
-      source
+      source,
+      onPressOffer,
+      onPressMore
     } = this.props
 
     return(
@@ -36,12 +38,12 @@ class CareRequest extends React.Component {
           </Text>
           <View style={styles.timeDateSection}>
             <Text style={styles.timeDate}>Friday, June 14 2019, 2pm-4pm </Text>
-            <TouchableOpacity style={styles.moreLink}>
+            <TouchableOpacity style={styles.moreLink} onPress={() => onPressMore()}>
               <Text style={styles.timeDate}>More...</Text>
             </TouchableOpacity>
           </View>
           <View style={styles.buttonSection}>
-            <TouchableOpacity>
+            <TouchableOpacity onPress={() => onPressOffer()}>
               <View style={styles.tagButton}>
                 <Text style={styles.tagButtonTitle}>OFFER CARE</Text>
               </View>

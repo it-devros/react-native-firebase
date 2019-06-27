@@ -25,45 +25,70 @@ const styles = StyleSheet.create({
     paddingBottom: normalize(15)
   },
   avatarImage: {
-    width: normalize(60),
-    height: normalize(60),
+    width: normalize(90),
+    height: normalize(90),
     marginRight: normalize(5),
-    borderRadius: normalize(30)
+    borderRadius: normalize(45)
   },
-  contentFormSection: {
+  statusSection: {
     flex: 1,
   },
-  titleSection: {
+  statusHeaderSection: {
     flexDirection: 'row',
-    alignItems: 'flex-end',
-    justifyContent: 'flex-start'
+    alignItems: 'center',
+    justifyContent: 'flex-start',
+    paddingBottom: normalize(10)
   },
-  nameAddress: {
-    fontSize: normalize(16),
-    color: '#000000',
+  superIconImage: {
+    width: normalize(30),
+    height: normalize(30),
+    marginRight: normalize(5)
+  },
+  statusText: {
+    fontSize: normalize(18),
     textAlign: 'left',
-    marginRight: normalize(10)
+    color: '#540C69'
   },
-  timeText: {
-    fontSize: normalize(12),
-    color: '#000000',
-    textAlign: 'left'
+  detailSection: {
+    flexDirection: 'row',
+    alignItems: 'flex-start',
+    justifyContent: 'center'
   },
-  contentMainSection: {
-    padding: normalize(5),
-    borderWidth: normalize(2),
+  detailItem: {
+    flex: 1
+  },
+  detailItemSection1: {
     borderColor: 'rgba(112,112,112, 0.5)',
-    borderRadius: normalize(5)
+    borderWidth: normalize(1),
+    marginRight: normalize(5),
   },
-  content: {
-    borderWidth: 0,
-    padding: 0,
-    textAlign: 'left'
+  detailItemSection2: {
+    borderColor: 'rgba(112,112,112, 0.5)',
+    borderWidth: normalize(1),
+    marginLeft: normalize(5),
+  },
+  detailTitle: {
+    fontSize: normalize(16),
+    textAlign: 'center',
+    color: '#540C69'
+  },
+  detailBold: {
+    fontSize: normalize(16),
+    textAlign: 'center',
+    color: '#540C69',
+    fontWeight: 'bold'
+  },
+  descriptionSection: {
+    padding: normalize(5)
+  },
+  descriptionText: {
+    textAlign: 'left',
+    color: '#540C69',
   },
   middleButtonSection: {
     flexDirection: 'row',
     alignItems: 'center',
-    justifyContent: 'space-between',
+    justifyContent: 'center',
     padding: normalize(5),
     paddingBottom: normalize(15)
   },

@@ -17,15 +17,12 @@ const styles = StyleSheet.create({
   topSection: {
 
   },
-  navigateSection: {
+  contentSection: {
     flexDirection: 'row',
     alignItems: 'flex-start',
     justifyContent: 'center',
+    padding: normalize(5),
     paddingBottom: normalize(15)
-  },
-  avatarSection: {
-    flex: 1,
-    padding: normalize(5)
   },
   avatarImage: {
     width: normalize(60),
@@ -33,24 +30,34 @@ const styles = StyleSheet.create({
     marginRight: normalize(5),
     borderRadius: normalize(30)
   },
-  navDropSection: {
+  contentFormSection: {
     flex: 1,
-    padding: normalize(5)
   },
-  navItem: {
+  titleSection: {
     flexDirection: 'row',
-    alignItems: 'center',
+    alignItems: 'flex-end',
     justifyContent: 'flex-start'
   },
-  navImage: {
-    width: normalize(30),
-    height: normalize(30),
-    marginRight: normalize(10)
-  },
-  navTitle: {
-    flex: 1,
+  nameAddress: {
     fontSize: normalize(16),
     color: '#000000',
+    textAlign: 'left',
+    marginRight: normalize(10)
+  },
+  timeText: {
+    fontSize: normalize(12),
+    color: '#000000',
+    textAlign: 'left'
+  },
+  contentMainSection: {
+    padding: normalize(5),
+    borderWidth: normalize(2),
+    borderColor: 'rgba(112,112,112, 0.5)',
+    borderRadius: normalize(5)
+  },
+  content: {
+    borderWidth: 0,
+    padding: 0,
     textAlign: 'left'
   },
   middleButtonSection: {

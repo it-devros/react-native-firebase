@@ -96,6 +96,18 @@ class FindCareGivers extends React.Component {
               source={require('../../assets/avatars/avatar9.jpg')}
               tag={'NEW'}
             />
+
+            <View style={styles.addContactButtonSection}>
+              <TouchableOpacity style={styles.addContactButtonItem}>
+                <View style={styles.addContactButtonCircle}>
+                  <Image
+                    style={styles.addContactButtonImage}
+                    source={require('../../assets/icons/plus.png')}
+                  />
+                </View>
+              </TouchableOpacity>
+            </View>
+
           </View>
         </ScrollView>
       </View>

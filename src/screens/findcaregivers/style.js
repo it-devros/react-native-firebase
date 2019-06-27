@@ -67,9 +67,30 @@ const styles = StyleSheet.create({
     textAlign: 'left'
   },
   contactItems: {
-    paddingBottom: normalize(200)
+    paddingBottom: normalize(180)
   },
-  
+  addContactButtonSection: {
+    paddingTop: normalize(30),
+    alignItems: 'center'
+  },
+  addContactButtonItem: {
+    alignItems: 'center',
+    justifyContent: 'center'
+  },
+  addContactButtonCircle: {
+    width: normalize(60),
+    height: normalize(60),
+    borderRadius: normalize(30),
+    borderWidth: normalize(3),
+    borderColor: 'rgba(112,112,112, 1)',
+    alignItems: 'center',
+    justifyContent: 'center',
+    marginBottom: normalize(5)
+  },
+  addContactButtonImage: {
+    width: normalize(30),
+    height: normalize(30)
+  },
 })
 
 

@@ -45,6 +45,11 @@ class CareRequests extends React.Component {
     this.state = {
     }
 
+    this.navigateTo = this.navigateTo.bind(this)
+  }
+
+  navigateTo(screen) {
+    this.props.navigation.navigate(screen)
   }
 
   render() {
@@ -74,15 +79,23 @@ class CareRequests extends React.Component {
           </View>
           <CareRequest
             source={require('../../assets/avatars/avatar3.jpg')}
+            onPressOffer={() => this.navigateTo('OfferCare')}
+            onPressMore={() => this.navigateTo('CareRequestView')}
           />
           <CareRequest
             source={require('../../assets/avatars/avatar8.jpg')}
+            onPressOffer={() => this.navigateTo('OfferCare')}
+            onPressMore={() => this.navigateTo('CareRequestView')}
           />
           <CareRequest
             source={require('../../assets/avatars/avatar12.png')}
+            onPressOffer={() => this.navigateTo('OfferCare')}
+            onPressMore={() => this.navigateTo('CareRequestView')}
           />
           <CareRequest
             source={require('../../assets/avatars/avatar9.jpg')}
+            onPressOffer={() => this.navigateTo('OfferCare')}
+            onPressMore={() => this.navigateTo('CareRequestView')}
           />
         </ScrollView>
       </View>

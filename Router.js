@@ -22,6 +22,7 @@ import {
   RequestCare,
   OfferCare,
   CareRequests,
+  CareRequestView,
   Notification,
   More,
   FindCareGivers
@@ -76,7 +77,8 @@ const CareStack = {
   Care: { screen: Care },
   RequestCare: { screen: RequestCare },
   OfferCare: { screen: OfferCare },
-  CareRequests: { screen: CareRequests }
+  CareRequests: { screen: CareRequests },
+  CareRequestView: { screen: CareRequestView }
 }
 const CareNavigator = createStackNavigator({
   ...CareStack

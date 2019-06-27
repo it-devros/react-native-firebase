@@ -68,7 +68,7 @@ const styles = StyleSheet.create({
   },
   tagButtonTitle: {
     color: '#ffffff',
-    fontSize: normalize(18),
+    fontSize: normalize(16),
     textAlign: 'center'
   },
   mapHeaderTextSection: {
@@ -82,8 +82,8 @@ const styles = StyleSheet.create({
     justifyContent: 'center'
   },
   mapHeaderText: {
-    fontSize: normalize(18),
-    color: '#000000',
+    fontSize: normalize(16),
+    color: '#707070',
     textAlign: 'center'
   }
 })

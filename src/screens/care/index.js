@@ -67,7 +67,7 @@ class Care extends React.Component {
                 />
                 <Text style={styles.navTitle}>Request Care</Text>
               </TouchableOpacity>
-              <TouchableOpacity style={styles.navItem}>
+              <TouchableOpacity style={styles.navItem} onPress={() => this.navigateTo('OfferCare')}>
                 <Image
                   style={styles.navImage}
                   source={require('../../assets/icons/offer_care.png')}

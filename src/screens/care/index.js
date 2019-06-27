@@ -40,6 +40,11 @@ class Care extends React.Component {
     this.state = {
     }
 
+    this.navigateTo = this.navigateTo.bind(this)
+  }
+
+  navigateTo(screen) {
+    this.props.navigation.navigate(screen)
   }
 
   render() {
@@ -55,7 +60,7 @@ class Care extends React.Component {
               />
             </View>
             <View style={styles.navDropSection}>
-              <TouchableOpacity style={styles.navItem}>
+              <TouchableOpacity style={styles.navItem} onPress={() => this.navigateTo('RequestCare')}>
                 <Image
                   style={styles.navImage}
                   source={require('../../assets/icons/request_care.png')}

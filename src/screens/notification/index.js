@@ -44,7 +44,7 @@ class Notification extends React.Component {
 
     return(
       <View>
-        <Text>This is the notification</Text>
+        <Text></Text>
       </View>
     )
 

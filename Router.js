@@ -21,6 +21,7 @@ import {
   Care,
   RequestCare,
   OfferCare,
+  CareRequests,
   Notification,
   More,
   FindCareGivers
@@ -74,7 +75,8 @@ const LeadershipNavigator = createStackNavigator({
 const CareStack = {
   Care: { screen: Care },
   RequestCare: { screen: RequestCare },
-  OfferCare: { screen: OfferCare }
+  OfferCare: { screen: OfferCare },
+  CareRequests: { screen: CareRequests }
 }
 const CareNavigator = createStackNavigator({
   ...CareStack

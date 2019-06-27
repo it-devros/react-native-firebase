@@ -37,13 +37,13 @@ const styles = StyleSheet.create({
   },
   tagButtonTitle: {
     color: '#ffffff',
-    fontSize: normalize(18),
+    fontSize: normalize(16),
     textAlign: 'center'
   },
   avatarImage: {
-    width: normalize(80),
-    height: normalize(80),
-    borderRadius: normalize(40),
+    width: normalize(70),
+    height: normalize(70),
+    borderRadius: normalize(35),
   },
   iconSection: {
     flexDirection: 'row',

@@ -33,7 +33,7 @@ const styles = StyleSheet.create({
     marginLeft: normalize(15),
   },
   nameText: {
-    fontSize: normalize(22),
+    fontSize: normalize(20),
     fontWeight: 'bold',
     color: '#000000',
     textAlign: 'left'

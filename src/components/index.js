@@ -1,9 +1,9 @@
 
 
-import BlockIconButton from './blockIconButton'
+import BlockIconButton from './blockiconbutton'
 import Button from './button'
 import Link from './link'
-import StrInput from './strInput'
+import StrInput from './strinput'
 
 
 export {

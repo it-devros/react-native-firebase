@@ -7,6 +7,7 @@ import Leadership from './leadership'
 import Care from './care'
 import Notification from './notification'
 import More from './more'
+import FindCareGivers from './findcaregivers'
 
 
 export {
@@ -17,5 +18,6 @@ export {
   Leadership,
   Care,
   Notification,
-  More
+  More,
+  FindCareGivers
 }

@@ -44,7 +44,7 @@ class Care extends React.Component {
 
     return(
       <View>
-        <Text>This is care</Text>
+        <Text></Text>
       </View>
     )
 

@@ -41,6 +41,11 @@ class Menu extends React.Component {
     this.state = {
     }
 
+    this.navigateTo = this.navigateTo.bind(this)
+  }
+
+  navigateTo(screen) {
+    this.props.navigation.navigate(screen)
   }
 
   render() {
@@ -61,7 +66,7 @@ class Menu extends React.Component {
         </View>
         <ScrollView>
           <View style={styles.navItemSection}>
-            <View style={styles.navItem}>
+            <TouchableOpacity style={styles.navItem}>
               <Image
                 style={styles.itemImage}
                 source={require('../../assets/icons/home.png')}
@@ -69,8 +74,8 @@ class Menu extends React.Component {
               <View style={styles.navTitle}>
                 <Text style={styles.titleText}>Home</Text>
               </View>
-            </View>
-            <View style={styles.navItem}>
+            </TouchableOpacity>
+            <TouchableOpacity style={styles.navItem} onPress={() => this.navigateTo('FindCareGivers')}>
               <Image
                 style={styles.itemImage}
                 source={require('../../assets/icons/add-contact.png')}
@@ -78,8 +83,8 @@ class Menu extends React.Component {
               <View style={styles.navTitle}>
                 <Text style={styles.titleText}>Find Caregivers Near You</Text>
               </View>
-            </View>
-            <View style={styles.navItem}>
+            </TouchableOpacity>
+            <TouchableOpacity style={styles.navItem}>
               <Image
                 style={styles.itemImage}
                 source={require('../../assets/icons/leadership.png')}
@@ -87,8 +92,8 @@ class Menu extends React.Component {
               <View style={styles.navTitle}>
                 <Text style={styles.titleText}>Caregiver Groups</Text>
               </View>
-            </View>
-            <View style={styles.navItem}>
+            </TouchableOpacity>
+            <TouchableOpacity style={styles.navItem}>
               <Image
                 style={styles.itemImage}
                 source={require('../../assets/icons/care.png')}
@@ -96,8 +101,8 @@ class Menu extends React.Component {
               <View style={styles.navTitle}>
                 <Text style={styles.titleText}>Careplace: Give Care, Get Care</Text>
               </View>
-            </View>
-            <View style={styles.navItem}>
+            </TouchableOpacity>
+            <TouchableOpacity style={styles.navItem}>
               <Image
                 style={styles.itemImage}
                 source={require('../../assets/icons/settings.png')}
@@ -105,8 +110,8 @@ class Menu extends React.Component {
               <View style={styles.navTitle}>
                 <Text style={styles.titleText}>Settings</Text>
               </View>
-            </View>
-            <View style={styles.navItem}>
+            </TouchableOpacity>
+            <TouchableOpacity style={styles.navItem}>
               <Image
                 style={styles.itemImage}
                 source={require('../../assets/icons/notepad.png')}
@@ -114,8 +119,8 @@ class Menu extends React.Component {
               <View style={styles.navTitle}>
                 <Text style={styles.titleText}>Terms & Conditions</Text>
               </View>
-            </View>
-            <View style={styles.navItem}>
+            </TouchableOpacity>
+            <TouchableOpacity style={styles.navItem}>
               <Image
                 style={styles.itemImage}
                 source={require('../../assets/icons/shield.png')}
@@ -123,8 +128,8 @@ class Menu extends React.Component {
               <View style={styles.navTitle}>
                 <Text style={styles.titleText}>Privacy Policy</Text>
               </View>
-            </View>
-            <View style={styles.navItem}>
+            </TouchableOpacity>
+            <TouchableOpacity style={styles.navItem}>
               <Image
                 style={styles.itemImage}
                 source={require('../../assets/icons/envelope.png')}
@@ -132,7 +137,7 @@ class Menu extends React.Component {
               <View style={styles.navTitle}>
                 <Text style={styles.titleText}>Contact Us</Text>
               </View>
-            </View>
+            </TouchableOpacity>
             <View style={styles.bottomLinks}>
               <TouchableOpacity>
                 <Text style={styles.bottomLink}>Deactivate my account</Text>

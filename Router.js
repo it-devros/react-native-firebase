@@ -20,7 +20,8 @@ import {
   Leadership,
   Care,
   Notification,
-  More
+  More,
+  FindCareGivers
 } from './src/screens'
 
 import {
@@ -46,7 +47,8 @@ const NoteNavigator = createStackNavigator({
 
 
 const ContactStack = {
-  Menu: { screen: Menu }
+  Menu: { screen: Menu },
+  FindCareGivers: { screen: FindCareGivers }
 }
 const ContactNavigator = createStackNavigator({
   ...ContactStack

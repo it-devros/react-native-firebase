@@ -9,6 +9,8 @@ import {
 import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
 
+import MapView from 'react-native-maps'
+
 
 import {
   commonActions,
@@ -97,6 +99,16 @@ class Care extends React.Component {
           </View>
           <View style={styles.mapHeaderTextSection}>
             <Text style={styles.mapHeaderText}>CAREGIVERS NEAR YOU</Text>
+          </View>
+          <View style={styles.mapContainer}>
+            <MapView
+              initialRegion={{
+                latitude: 37.78825,
+                longitude: -122.4324,
+                latitudeDelta: 0.0922,
+                longitudeDelta: 0.0421,
+              }}
+            />
           </View>
         </View>
       </View>

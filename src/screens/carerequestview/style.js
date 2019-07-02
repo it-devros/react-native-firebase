@@ -21,8 +21,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'flex-start',
     justifyContent: 'center',
-    padding: normalize(5),
-    paddingBottom: normalize(15)
+    padding: normalize(5)
   },
   avatarImage: {
     width: normalize(90),

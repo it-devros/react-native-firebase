@@ -1,6 +1,11 @@
 import React from 'react'
 import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
+
+import {
+  Platform
+} from 'react-native'
+
 import {
   createStackNavigator,
   createMaterialTopTabNavigator,
@@ -181,11 +186,12 @@ const TabNavigator = createMaterialTopTabNavigator({
     },
     style: {
       padding: normalize(5),
+      paddingTop: Platform.OS === 'ios' ? normalize(20) : normalize(5),
       backgroundColor: '#ffffff',
       borderTopWidth: 0,
       borderBottomWidth: 2,
       borderColor: '#f2f2f2',
-      height: normalize(60)
+      height: Platform.OS === 'ios' ? normalize(75) : normalize(60)
     },
     tabStyle: {
       alignItems: 'center',

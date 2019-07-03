@@ -1,7 +1,8 @@
 
 import {
   StyleSheet,
-  Dimensions
+  Dimensions,
+  Platform
 } from 'react-native'
 
 import {
@@ -25,7 +26,8 @@ const styles = StyleSheet.create({
   headerSection: {
     backgroundColor: '#ffffff',
     width: width,
-    padding: normalize(15)
+    padding: normalize(15),
+    paddingTop: Platform.OS === 'ios' ? normalize(20) : normalize(15)
   },
   titleText: {
     fontSize: normalize(16),

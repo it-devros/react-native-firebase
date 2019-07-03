@@ -90,7 +90,11 @@ const styles = StyleSheet.create({
     textAlign: 'center'
   },
   mapContainer: {
-    
+    width: width
+  },
+  mapContent: {
+    width: width,
+    height: '100%'
   }
 })
 

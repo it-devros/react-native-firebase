@@ -85,6 +85,13 @@ const styles = StyleSheet.create({
     fontSize: normalize(16),
     color: '#707070',
     textAlign: 'center'
+  },
+  mapContainer: {
+    width: width
+  },
+  mapContent: {
+    width: width,
+    height: '100%'
   }
 })
 

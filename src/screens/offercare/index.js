@@ -86,8 +86,8 @@ class OfferCare extends React.Component {
           <MapView
             style={styles.mapContent}
             initialRegion={{
-              latitude: 40.716712,
-              longitude: -74.272830,
+              latitude: 40.700782,
+              longitude: -73.905979,
               latitudeDelta: 0.0922,
               longitudeDelta: 0.0421,
             }}
